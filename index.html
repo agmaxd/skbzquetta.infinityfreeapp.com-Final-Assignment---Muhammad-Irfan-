@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Shaikh Khalifa Bin Zayed Hospital, Quetta</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+  </head>
+
+  <body>
+    <nav class="site-navbar">
+      <div class="navbar-inner">
+        <a class="brand-link" href="index.html">
+          <img src="images/logo.png" alt="Hospital logo" class="brand-logo" />
+          <span class="brand-name">
+            Shaikh Khalifa Bin Zayed Hospital, Quetta
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a class="nav-button" href="index.html">Home</a>
+          <a class="nav-button" href="html/aboutus.html">About Us</a>
+          <a class="nav-button" href="html/appointment.html"
+            >Book an Appointment</a
+          >
+          <a class="nav-button active" href="html/contact.html">Contact Us</a>
+            <a class="login-button" href="admin/login.php">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="hero-small-text">SHAIKH KHALIFA BIN ZAYED HOSPITAL</p>
+
+        <h1>
+          Advanced Healthcare.<br />
+          Compassionate Care.
+        </h1>
+
+        <p class="hero-description">
+          Providing trusted healthcare services to the people of Quetta with
+          modern facilities and dedicated medical professionals.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="html/appointment.html" class="hero-button primary">
+            Book an Appointment
+          </a>
+
+          <a href="#about" class="hero-button secondary">
+            Explore Our Hospital
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-next-section scroll-reveal" id="about">
+      <div class="ecg">
+        <svg viewBox="0 0 2000 120" preserveAspectRatio="none">
+          <path
+            class="ecg-line"
+            d="M0,60
+       L80,60
+       L95,60
+       L105,45
+       L115,75
+       L125,60
+       L180,60
+       L195,40
+       L205,80
+       L215,60
+       L270,60
+       L285,20
+       L295,100
+       L305,60
+       L360,60
+       L375,45
+       L385,75
+       L395,60
+       L450,60
+       L465,30
+       L475,90
+       L485,60
+       L540,60
+       L555,40
+       L565,80
+       L575,60
+       L630,60
+       L645,15
+       L655,105
+       L665,60
+       L720,60
+       L735,45
+       L745,75
+       L755,60
+       L810,60
+       L825,30
+       L835,90
+       L845,60
+       L900,60
+       L915,40
+       L925,80
+       L935,60
+       L1000,60
+
+       L1080,60
+       L1095,60
+       L1105,45
+       L1115,75
+       L1125,60
+       L1180,60
+       L1195,40
+       L1205,80
+       L1215,60
+       L1270,60
+       L1285,20
+       L1295,100
+       L1305,60
+       L1360,60
+       L1375,45
+       L1385,75
+       L1395,60
+       L1450,60
+       L1465,30
+       L1475,90
+       L1485,60
+       L1540,60
+       L1555,40
+       L1565,80
+       L1575,60
+       L1630,60
+       L1645,15
+       L1655,105
+       L1665,60
+       L1720,60
+       L1735,45
+       L1745,75
+       L1755,60
+       L1810,60
+       L1825,30
+       L1835,90
+       L1845,60
+       L1900,60
+       L1915,40
+       L1925,80
+       L1935,60
+       L2000,60"
+          />
+        </svg>
+      </div>
+
+      <div class="content-container">
+        <p class="section-label">WELCOME TO OUR HOSPITAL</p>
+
+        <h2>
+          Healthcare designed<br />
+          around you.
+        </h2>
+
+        <p>
+          Shaikh Khalifa Bin Zayed Hospital is committed to providing quality,
+          compassionate healthcare to the community of Quetta. With dedicated
+          medical professionals, modern facilities, and a patient-centered
+          approach, we strive to make every patient's experience safe,
+          respectful, and comfortable. Our goal is to provide reliable
+          healthcare services while putting the needs and well-being of our
+          patients at the heart of everything we do.
+        </p>
+        <div id="doctors"></div>
+      </div>
+      <section class="specialists-section scroll-reveal" id="specialists">
+        <div class="content-container">
+          <p class="section-label">OUR MEDICAL TEAM</p>
+
+          <h2>Meet Our Specialists</h2>
+
+          <p>
+            Our team of experienced medical professionals is dedicated to
+            providing compassionate, specialized, and patient-centered care.
+            With expertise across a range of medical specialties, our doctors
+            work to ensure that every patient receives attentive care and
+            professional guidance throughout their healthcare journey.
+          </p>
+
+          <div class="doctor-slider">
+            <!-- Previous Doctor -->
+            <button
+              class="doctor-arrow doctor-arrow-left"
+              aria-label="Previous doctor"
+            >
+              &#10094;
+            </button>
+
+            <!-- Doctor Cards -->
+            <div class="doctor-slider-window">
+              <div class="doctor-slider-track">
+                <!-- Doctor 1 -->
+                <article class="doctor-card">
+                  <div class="doctor-image">
+                    <img src="images/male1.avif" alt="Dr. Ahmed Khan" />
+                  </div>
+
+                  <div class="doctor-info">
+                    <h3>Dr. Ahmed Khan</h3>
+
+                    <p class="doctor-speciality">Consultant Cardiologist</p>
+
+                    <p class="doctor-qualification">MBBS, FCPS (Cardiology)</p>
+                  </div>
+                </article>
+
+                <!-- Doctor 2 -->
+                <article class="doctor-card">
+                  <div class="doctor-image">
+                    <img src="images/fmale1.webp" alt="Dr. Sara Ahmed" />
+                  </div>
+
+                  <div class="doctor-info">
+                    <h3>Dr. Sara Ahmed</h3>
+
+                    <p class="doctor-speciality">Consultant Pediatrician</p>
+
+                    <p class="doctor-qualification">MBBS, FCPS (Pediatrics)</p>
+                  </div>
+                </article>
+
+                <!-- Doctor 3 -->
+                <article class="doctor-card">
+                  <div class="doctor-image">
+                    <img src="images/male2.jpg" alt="Dr. Muhammad Ali" />
+                  </div>
+
+                  <div class="doctor-info">
+                    <h3>Dr. Muhammad Ali</h3>
+
+                    <p class="doctor-speciality">General Surgeon</p>
+
+                    <p class="doctor-qualification">MBBS, FCPS (Surgery)</p>
+                  </div>
+                </article>
+
+                <!-- Doctor 4 -->
+                <article class="doctor-card">
+                  <div class="doctor-image">
+                    <img src="images/fmale2.webp" alt="Dr. Fatima Hassan" />
+                  </div>
+
+                  <div class="doctor-info">
+                    <h3>Dr. Fatima Hassan</h3>
+
+                    <p class="doctor-speciality">Consultant Gynecologist</p>
+
+                    <p class="doctor-qualification">MBBS, FCPS (Gynecology)</p>
+                  </div>
+                </article>
+
+                <!-- Doctor 5 -->
+                <article class="doctor-card">
+                  <div class="doctor-image">
+                    <img src="images/male3.webp" alt="Dr. Usman Tariq" />
+                  </div>
+
+                  <div class="doctor-info">
+                    <h3>Dr. Usman Tariq</h3>
+
+                    <p class="doctor-speciality">Consultant Neurologist</p>
+
+                    <p class="doctor-qualification">MBBS, FCPS (Neurology)</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Next Doctor -->
+            <button
+              class="doctor-arrow doctor-arrow-right"
+              aria-label="Next doctor"
+            >
+              &#10095;
+            </button>
+          </div>
+          <div id="contact"></div>
+        </div>
+
+        <!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+        <section class="why-choose-section scroll-reveal">
+          <div class="why-choose-container">
+            <!-- LEFT SIDE -->
+            <div class="why-choose-image">
+              <img
+                src="images/hospitalimage2.jpg"
+                alt="Shaikh Khalifa Bin Zayed Hospital"
+              />
+
+              <div class="why-choose-experience">
+                <strong>24/7</strong>
+                <span>Patient Care</span>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="why-choose-content">
+              <span class="section-label">WHY CHOOSE US</span>
+
+              <h2>
+                Quality Healthcare With
+                <span>Compassion</span>
+              </h2>
+
+              <p class="why-choose-intro">
+                At Shaikh Khalifa Bin Zayed Hospital, we are committed to
+                providing reliable, compassionate and patient-centered
+                healthcare to our community.
+              </p>
+
+              <!-- FEATURES -->
+
+              <div class="why-choose-features">
+                <div class="why-feature">
+                  <div class="why-feature-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                  </div>
+
+                  <div>
+                    <h3>Experienced Specialists</h3>
+
+                    <p>
+                      Our patients have access to qualified medical
+                      professionals across a range of specialties.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="why-feature">
+                  <div class="why-feature-icon">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+
+                  <div>
+                    <h3>24/7 Emergency Care</h3>
+
+                    <p>
+                      Our emergency services are available around the clock when
+                      immediate medical attention is needed.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="why-feature">
+                  <div class="why-feature-icon">
+                    <i class="fa-solid fa-hospital"></i>
+                  </div>
+
+                  <div>
+                    <h3>Modern Medical Facilities</h3>
+
+                    <p>
+                      We provide access to modern facilities and essential
+                      diagnostic and medical services.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="why-feature">
+                  <div class="why-feature-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                  </div>
+
+                  <div>
+                    <h3>Patient-Centered Care</h3>
+
+                    <p>
+                      Every patient deserves respectful, attentive and
+                      compassionate healthcare.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="html/aboutus.html" class="why-choose-button">
+                Learn More About Us
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================
+     EMERGENCY / QUICK CONTACT
+========================= -->
+
+        <div class="emergency-container scroll-reveal">
+          <!-- Emergency Information -->
+          <div class="emergency-content">
+            <div class="emergency-icon">
+              <img class="emergency-img" src="images/emegencyicon.jpg" alt="" />
+            </div>
+
+            <div class="emergency-text">
+              <span class="emergency-label">EMERGENCY SERVICES</span>
+
+              <h2>We're Here When You Need Us</h2>
+
+              <p>
+                Our emergency services are available around the clock. If you or
+                someone you know needs immediate medical attention, contact the
+                hospital without delay.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="emergency-actions">
+            <a href="tel:+92812892180" class="emergency-call">
+              <i class="fa-solid fa-phone"></i>
+
+              <div>
+                <span>Emergency Hotline</span>
+                <strong>+92 81 2892180</strong>
+              </div>
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/9d6B1HvK3f5hJFEQ7"
+              class="emergency-location"
+              target="_blank"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+
+              <div>
+                <span>Find Us</span>
+                <strong>View Location</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- =========================
+     FOOTER
+========================= -->
+
+      <footer class="site-footer">
+        <div class="footer-container">
+          <!-- =========================
+             HOSPITAL INFORMATION
+        ========================= -->
+
+          <div class="footer-about">
+            <div class="footer-logo">
+              <img class="emergency-img" src="images/logo.png" alt="" />
+              <div>
+                <h3>Shaikh Khalifa Bin Zayed</h3>
+                <span>Hospital, Quetta</span>
+              </div>
+            </div>
+
+            <p>
+              Providing compassionate, reliable and patient-centered healthcare
+              services to the community of Quetta.
+            </p>
+          </div>
+
+          <!-- =========================
+             QUICK LINKS
+        ========================= -->
+
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="html/aboutus.html">About Us</a></li>
+              <li><a href="html/appointment.html">Appointments</a></li>
+              <li><a href="html/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- =========================
+             PATIENT SERVICES
+        ========================= -->
+
+          <div class="footer-column">
+            <h4>Patient Services</h4>
+
+            <ul>
+              <li>Appointments</li>
+              <li>Emergency Care</li>
+              <li>Departments</li>
+              <li>Laboratory</li>
+              <li>Pharmacy</li>
+            </ul>
+          </div>
+
+          <!-- =========================
+             CONTACT
+        ========================= -->
+
+          <div class="footer-column footer-contact">
+            <h4>Contact Us</h4>
+
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <span>
+                Sheikh Khalifa Bin Zayed Hospital, Saryab, Quetta, Pakistan
+              </span>
+            </div>
+
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+
+              <a href="tel:+9281892180"> 081-892180 </a>
+            </div>
+
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-clock"></i>
+
+              <span>
+                Emergency Services<br />
+                <strong>Available 24/7</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+         MAP
+    ========================= -->
+
+        <div class="footer-map-container">
+          <div class="footer-map-header">
+            <div>
+              <span>FIND US</span>
+              <h3>Visit Our Hospital</h3>
+            </div>
+
+            <a
+              href="https://maps.app.goo.gl/va2XBjZuzNXR67nL8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Directions
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="footer-map">
+            <iframe
+              src="https://www.google.com/maps?q=3XM6%2B5H%20Quetta%2C%20Pakistan&output=embed"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2026 Shaikh Khalifa Bin Zayed Hospital, Quetta. All Rights
+            Reserved.
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script src="Functioning.js"></script>
+  </body>
+</html>

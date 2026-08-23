@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Book An Appointment | Shaikh Khalifa Bin Zayed Hospital, Quetta
+    </title>
+    <link rel="stylesheet" href="../Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+  </head>
+
+  <body>
+    <nav class="site-navbar">
+      <div class="navbar-inner">
+        <a class="brand-link" href="../index.html">
+          <img
+            src="../images/logo.png"
+            alt="Hospital logo"
+            class="brand-logo"
+          />
+          <span class="brand-name">
+            Shaikh Khalifa Bin Zayed Hospital, Quetta
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a class="nav-button" href="../index.html">Home</a>
+          <a class="nav-button" href="./aboutus.html">About Us</a>
+          <a class="nav-button" href="./appointment.html"
+            >Book an Appointment</a
+          >
+          <a class="nav-button active" href="./contact.html">Contact Us</a>
+            <a class="login-button" href="../admin/login.php">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================
+     BOOK AN APPOINTMENT
+========================= -->
+
+    <section class="appointment-section" id="appointment">
+      <div class="appointment-container">
+        <!-- Section Header -->
+        <div class="appointment-header scroll-reveal">
+          <div class="about-breadcrumb">
+            <a href="../index.html">HOME</a>
+            <span>/</span>
+            <span>Book an Appointment</span>
+          </div>
+
+          <h2>Book an Appointment</h2>
+
+          <p>
+            Schedule an appointment with one of our specialists. Please provide
+            your details below and our team will get in touch with you to
+            confirm your appointment.
+          </p>
+        </div>
+
+        <!-- Appointment Form -->
+        <div class="appointment-card scroll-reveal">
+          <form
+            id="appointmentForm"
+            action="../appointments/book-appointment.php"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <!-- =========================
+                     PATIENT INFORMATION
+                ========================= -->
+
+            <div class="form-section">
+              <div class="form-section-title">
+                <h3>Patient Information</h3>
+                <p>Please provide your basic information.</p>
+              </div>
+
+              <div class="form-grid">
+                <!-- Full Name -->
+                <div class="form-group full-width">
+                  <label for="patientName"> Full Name <span>*</span> </label>
+
+                  <input
+                    type="text"
+                    id="patientName"
+                    name="patient_name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    minlength="2"
+                    maxlength="100"
+                    pattern="[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ .'-]*"
+                    title="Name can only contain letters, spaces, apostrophes, periods and hyphens."
+                    required
+                  />
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="patientEmail">
+                    Email Address <span>*</span>
+                  </label>
+
+                  <input
+                    type="email"
+                    id="patientEmail"
+                    name="patient_email"
+                    placeholder="example@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                  <label for="patientPhone">
+                    Phone Number <span>*</span>
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="patientPhone"
+                    name="patient_phone"
+                    placeholder="+92 300 1234567"
+                    autocomplete="tel"
+                    maxlength="16"
+                    pattern="(\+92|0)3[0-9]{9}"
+                    title="Enter a valid Pakistani mobile number, e.g. 03001234567 or +923001234567"
+                    required
+                  />
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="form-group">
+                  <label for="dateOfBirth"> Date of Birth </label>
+
+                  <input
+                    type="date"
+                    id="dateOfBirth"
+                    name="date_of_birth"
+                    required
+                  />
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                  <label for="gender"> Gender </label>
+
+                  <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+
+                    <option value="Male">Male</option>
+
+                    <option value="Female">Female</option>
+
+                    <option value="Other">Other</option>
+
+                    <option value="Prefer not to say">Prefer not to say</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- =========================
+                     APPOINTMENT DETAILS
+                ========================= -->
+
+            <div class="form-section">
+              <div class="form-section-title">
+                <h3>Appointment Details</h3>
+
+                <p>
+                  Choose the department, doctor and preferred appointment time.
+                </p>
+              </div>
+
+              <div class="form-grid">
+                <!-- Department -->
+                <div class="form-group">
+                  <label for="department"> Department <span>*</span> </label>
+
+                  <select id="department" name="department_id" required>
+                    <option value="">Select Department</option>
+
+                    <!--
+                                    These will eventually be
+                                    generated from MySQL.
+                                -->
+
+                    <option value="1">Cardiology</option>
+
+                    <option value="2">Neurology</option>
+
+                    <option value="3">Pediatrics</option>
+
+                    <option value="4">General Medicine</option>
+
+                    <option value="5">Orthopedics</option>
+                  </select>
+                </div>
+
+                <!-- Doctor -->
+                <div class="form-group">
+                  <label for="doctor"> Preferred Doctor <span>*</span> </label>
+
+                  <select id="doctor" name="doctor_id" required disabled>
+                    <option value="">Select a department first</option>
+                  </select>
+                </div>
+
+                <!-- Appointment Type -->
+                <div class="form-group">
+                  <label for="appointmentType">
+                    Appointment Type <span>*</span>
+                  </label>
+
+                  <select id="appointmentType" name="appointment_type" required>
+                    <option value="">Select Appointment Type</option>
+
+                    <option value="In-Person Consultation">
+                      In-Person Consultation
+                    </option>
+
+                    <option value="Follow-up Visit">Follow-up Visit</option>
+
+                    <option value="General Check-up">General Check-up</option>
+                  </select>
+                </div>
+
+                <!-- Preferred Date -->
+                <div class="form-group">
+                  <label for="appointmentDate">
+                    Preferred Date <span>*</span>
+                  </label>
+
+                  <input
+                    type="date"
+                    id="appointmentDate"
+                    name="appointment_date"
+                    required
+                  />
+                </div>
+
+                <!-- Preferred Time -->
+                <div class="form-group">
+                  <label for="appointmentTime">
+                    Preferred Time <span>*</span>
+                  </label>
+
+                  <select id="appointmentTime" name="appointment_time" required>
+                    <option value="">Select Preferred Time</option>
+
+                    <option value="09:00">09:00 AM</option>
+
+                    <option value="10:00">10:00 AM</option>
+
+                    <option value="11:00">11:00 AM</option>
+
+                    <option value="12:00">12:00 PM</option>
+
+                    <option value="14:00">02:00 PM</option>
+
+                    <option value="15:00">03:00 PM</option>
+
+                    <option value="16:00">04:00 PM</option>
+                  </select>
+                </div>
+
+                <!-- Reason -->
+                <div class="form-group">
+                  <label for="visitReason"> Reason for Visit </label>
+
+                  <input
+                    type="text"
+                    id="visitReason"
+                    name="visit_reason"
+                    placeholder="e.g. Consultation, follow-up, check-up"
+                  />
+                </div>
+
+                <!-- Additional Message -->
+                <div class="form-group full-width"></div>
+
+                <!-- Previous Medical Record -->
+                <div class="form-group full-width">
+                  <label for="medicalRecord">
+                    Previous Medical Record (Optional)
+                  </label>
+
+                  <input
+                    type="file"
+                    id="medicalRecord"
+                    name="medical_record"
+                    accept="image/png,image/jpeg,image/jpg,image/webp"
+                  />
+
+                  <small class="upload-note">
+                    Upload a previous medical report or hospital image if you
+                    have one. Max size: 50MB.
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <!-- =========================
+                     EMERGENCY NOTICE
+                ========================= -->
+
+            <div class="appointment-notice">
+              <div class="notice-icon">!</div>
+
+              <div>
+                <strong>Medical Emergency?</strong>
+
+                <p>
+                  This appointment form is not intended for medical emergencies.
+                  If you require immediate medical attention, please contact the
+                  hospital emergency department directly.
+                </p>
+              </div>
+            </div>
+
+            <!-- =========================
+                     CONSENT
+                ========================= -->
+
+            <div class="appointment-consent">
+              <label class="consent-label">
+                <input
+                  type="checkbox"
+                  id="appointmentConsent"
+                  name="consent"
+                  required
+                />
+
+                <span>
+                  I confirm that the information provided is accurate and I
+                  agree to the hospital using this information to process my
+                  appointment request. <span>*</span>
+                </span>
+              </label>
+            </div>
+
+            <!-- =========================
+                     SUBMIT
+                ========================= -->
+
+            <div class="appointment-submit">
+              <button type="submit" class="appointment-submit-btn">
+                <span>Book Appointment</span>
+
+                <span class="submit-arrow"> → </span>
+              </button>
+
+              <p class="appointment-required">* Required fields</p>
+            </div>
+
+            <!-- =========================
+                     SUCCESS MESSAGE
+                ========================= -->
+
+            <div
+              class="appointment-success"
+              id="appointmentSuccess"
+              role="alert"
+              aria-live="polite"
+              hidden
+            >
+              <div class="success-icon">✓</div>
+
+              <div>
+                <h4>Appointment Request Submitted</h4>
+
+                <p>
+                  Thank you. Your appointment request has been received. Our
+                  team will contact you to confirm the date and time.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =========================
+             HOSPITAL INFORMATION
+        ========================= -->
+
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img class="emergency-img" src="../images/logo.png" alt="" />
+
+            <div>
+              <h3>Shaikh Khalifa Bin Zayed</h3>
+              <span>Hospital, Quetta</span>
+            </div>
+          </div>
+
+          <p>
+            Providing compassionate, reliable and patient-centered healthcare
+            services to the community of Quetta.
+          </p>
+        </div>
+
+        <!-- =========================
+             QUICK LINKS
+        ========================= -->
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- =========================
+             PATIENT SERVICES
+        ========================= -->
+
+        <div class="footer-column">
+          <h4>Patient Services</h4>
+
+          <ul>
+            <li>Appointments</li>
+            <li>Emergency Care</li>
+            <li>Departments</li>
+            <li>Laboratory</li>
+            <li>Pharmacy</li>
+          </ul>
+        </div>
+
+        <!-- =========================
+             CONTACT
+        ========================= -->
+
+        <div class="footer-column footer-contact">
+          <h4>Contact Us</h4>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>
+              Sheikh Khalifa Bin Zayed Hospital, Saryab, Quetta, Pakistan
+            </span>
+          </div>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+
+            <a href="tel:+9281892180"> 081-892180 </a>
+          </div>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+
+            <span>
+              Emergency Services<br />
+              <strong>Available 24/7</strong>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================
+         MAP
+    ========================= -->
+
+      <div class="footer-map-container">
+        <div class="footer-map-header">
+          <div>
+            <span>FIND US</span>
+            <h3>Visit Our Hospital</h3>
+          </div>
+
+          <a
+            href="https://maps.app.goo.gl/va2XBjZuzNXR67nL8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Directions
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=3XM6%2B5H%20Quetta%2C%20Pakistan&output=embed"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <!-- =========================
+         BOTTOM FOOTER
+    ========================= -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 Shaikh Khalifa Bin Zayed Hospital, Quetta. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../Functioning.js"></script>
+  </body>
+</html>

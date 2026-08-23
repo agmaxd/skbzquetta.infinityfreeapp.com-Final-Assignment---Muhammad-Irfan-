@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us | Shaikh Khalifa Bin Zayed Hospital, Quetta</title>
+
+    <link rel="stylesheet" href="../Style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+    <nav class="site-navbar">
+      <div class="navbar-inner">
+        <a class="brand-link" href="../index.html">
+          <img
+            src="../images/logo.png"
+            alt="Hospital logo"
+            class="brand-logo"
+          />
+
+          <span class="brand-name">
+            Shaikh Khalifa Bin Zayed Hospital, Quetta
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a class="nav-button" href="../index.html"> Home </a>
+
+          <a class="nav-button" href="./aboutus.html"> About Us </a>
+
+          <a class="nav-button" href="./appointment.html">
+            Book an Appointment
+          </a>
+
+          <a class="nav-button active" href="./contact.html"> Contact Us </a>
+            <a class="login-button" href="../admin/login.php">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =====================================================
+     CONTACT PAGE
+===================================================== -->
+
+    <main class="contact-page">
+      <!-- =================================================
+         PAGE INTRO
+    ================================================== -->
+
+      <section class="contact-intro">
+        <div class="contact-breadcrumb">
+          <a href="../index.html"> HOME </a>
+
+          <span>/</span>
+
+          <span> CONTACT US </span>
+        </div>
+
+        <span class="contact-label"> GET IN TOUCH </span>
+
+        <h1>
+          We're here
+          <span>to help.</span>
+        </h1>
+
+        <p>
+          Whether you have a question, need information about our services, or
+          simply want to reach our team, we're here to assist you.
+        </p>
+      </section>
+
+      <!-- =================================================
+         CONTACT INFORMATION
+    ================================================== -->
+
+      <section class="contact-information reveal">
+        <div class="contact-information-container">
+          <div class="contact-information-heading">
+            <span class="section-label"> REACH OUR TEAM </span>
+
+            <h2>
+              Let's stay
+              <span>connected.</span>
+            </h2>
+          </div>
+
+          <div class="contact-information-grid">
+            <!-- LOCATION -->
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div>
+                <span> LOCATION </span>
+
+                <h3>Visit Our Hospital</h3>
+
+                <p>
+                  Sheikh Khalifa Bin Zayed Hospital, Saryab, Quetta, Pakistan
+                </p>
+              </div>
+            </div>
+
+            <!-- PHONE -->
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <span> PHONE </span>
+
+                <h3>Speak With Us</h3>
+
+                <p>
+                  <a href="tel:+9281892180"> 081-892180 </a>
+                </p>
+              </div>
+            </div>
+
+            <!-- EMERGENCY -->
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-truck-medical"></i>
+              </div>
+
+              <div>
+                <span> EMERGENCY </span>
+
+                <h3>Available 24/7</h3>
+
+                <p>Emergency services remain available around the clock.</p>
+              </div>
+            </div>
+
+            <!-- EMAIL -->
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+
+              <div>
+                <span> EMAIL </span>
+
+                <h3>Send Us a Message</h3>
+
+                <p>info@skbz-hospital.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+         CONTACT FORM
+    ================================================== -->
+
+      <section class="contact-form-section reveal">
+        <div class="contact-form-container">
+          <div class="contact-form-intro">
+            <span class="section-label"> SEND A MESSAGE </span>
+
+            <h2>
+              How can we
+              <span>help you?</span>
+            </h2>
+
+            <p>
+              Have a question about our hospital, services, departments, or
+              facilities? Send us a message and our team will get back to you.
+            </p>
+
+            <div class="contact-form-note">
+              <i class="fa-solid fa-circle-info"></i>
+
+              <span>
+                For appointment requests, please use our dedicated appointment
+                booking system.
+              </span>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contactForm"
+            method="POST"
+            action="../contact-submit.php"
+          >
+            <div class="contact-form-grid">
+              <!-- NAME -->
+
+              <div class="contact-form-group">
+                <label for="contactName"> Full Name <span>*</span> </label>
+
+                <input
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <!-- EMAIL -->
+
+              <div class="contact-form-group">
+                <label for="contactEmail"> Email Address <span>*</span> </label>
+
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  placeholder="example@email.com"
+                  required
+                />
+              </div>
+
+              <!-- PHONE -->
+
+              <div class="contact-form-group">
+                <label for="contactPhone"> Phone Number </label>
+
+                <input
+                  type="tel"
+                  id="contactPhone"
+                  name="phone"
+                  placeholder="+92 XXX XXXXXXX"
+                />
+              </div>
+
+              <!-- SUBJECT -->
+
+              <div class="contact-form-group">
+                <label for="contactSubject"> Subject <span>*</span> </label>
+
+                <select id="contactSubject" name="subject" required>
+                  <option value="">Select a subject</option>
+
+                  <option value="General Inquiry">General Inquiry</option>
+
+                  <option value="Hospital Services">Hospital Services</option>
+
+                  <option value="Departments">Departments</option>
+
+                  <option value="Facilities">Facilities</option>
+
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <!-- MESSAGE -->
+
+              <div class="contact-form-group contact-full">
+                <label for="contactMessage"> Message <span>*</span> </label>
+
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  rows="7"
+                  maxlength="2000"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+
+                <div id="messageCounter" class="message-counter">0 / 2000</div>
+              </div>
+            </div>
+
+            <div class="contact-submit-area">
+              <button type="submit" class="contact-submit-btn">
+                <span> Send Message </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+              <p>* Required fields</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- =================================================
+         EMERGENCY NOTICE
+    ================================================== -->
+
+      <section class="contact-emergency reveal">
+        <div class="contact-emergency-icon">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+
+        <div>
+          <span> MEDICAL EMERGENCY? </span>
+
+          <h2>Please seek immediate medical attention.</h2>
+
+          <p>
+            The contact form is not intended for emergencies. If you require
+            immediate medical attention, please contact the hospital emergency
+            department directly.
+          </p>
+        </div>
+      </section>
+
+      <!-- =================================================
+         MAP
+    ================================================== -->
+
+      <section class="contact-map-section reveal">
+        <div class="contact-map-header">
+          <div>
+            <span class="section-label"> FIND US </span>
+
+            <h2>
+              Visit our
+              <span>hospital.</span>
+            </h2>
+          </div>
+
+          <a
+            href="https://maps.app.goo.gl/va2XBjZuzNXR67nL8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-directions"
+          >
+            Get Directions
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps?q=3XM6%2B5H%20Quetta%2C%20Pakistan&output=embed"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img class="emergency-img" src="../images/logo.png" alt="" />
+
+            <div>
+              <h3>Shaikh Khalifa Bin Zayed</h3>
+
+              <span> Hospital, Quetta </span>
+            </div>
+          </div>
+
+          <p>
+            Providing compassionate, reliable and patient-centered healthcare
+            services to the community of Quetta.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+
+          <ul>
+            <li>
+              <a href="../index.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="aboutus.html"> About Us </a>
+            </li>
+
+            <li>
+              <a href="appointment.html"> Appointments </a>
+            </li>
+
+            <li>
+              <a href="contact.html"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Patient Services</h4>
+
+          <ul>
+            <li>Appointments</li>
+
+            <li>Emergency Care</li>
+
+            <li>Departments</li>
+
+            <li>Laboratory</li>
+
+            <li>Pharmacy</li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h4>Contact Us</h4>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>
+              Sheikh Khalifa Bin Zayed Hospital, Saryab, Quetta, Pakistan
+            </span>
+          </div>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+
+            <a href="tel:+9281892180"> 081-892180 </a>
+          </div>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+
+            <span>
+              Emergency Services<br />
+
+              <strong> Available 24/7 </strong>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 Shaikh Khalifa Bin Zayed Hospital, Quetta. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <div id="contact-status-message" class="contact-status-message"></div>
+
+    <script src="../Functioning.js"></script>
+    <script>
+      const form = document.getElementById("contactForm");
+      const params = new URLSearchParams(window.location.search);
+      const status = params.get("status");
+      const message = params.get("message");
+      const statusBox = document.getElementById("contact-status-message");
+
+      if (form) {
+        form.addEventListener("submit", function (event) {
+          const confirmed = window.confirm(
+            "Are you sure you want to send this message?",
+          );
+          if (!confirmed) {
+            event.preventDefault();
+          }
+        });
+      }
+
+      if (status && message && statusBox) {
+        const decodedMessage = decodeURIComponent(message.replace(/\+/g, " "));
+        statusBox.textContent = decodedMessage;
+        statusBox.classList.add(status === "success" ? "success" : "error");
+        statusBox.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
